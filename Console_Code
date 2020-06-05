@@ -22,14 +22,14 @@ namespace Addition_Tow_Numbers_using_Bitwise_Operator
         static int add(int num1, int num2)
         {
             int sum = num1 ^ num2;
-            int carry = num1 & num2;
-            while (carry != 0)
+            int z = num1 & num2;
+            while (z != 0)
             {
-                carry <<= 1;
+                z <<= 1;
                 num1 = sum;
-                num2 = carry;
+                num2 = z;
                 sum = num1 ^ num2;
-                carry = num1 & num2;
+                z = num1 & num2;
             }
             return sum;
         }
