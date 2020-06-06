@@ -13,7 +13,7 @@ namespace Addition_Tow_Numbers_using_Bitwise_Operator
         {
             int x;
             int y;
-            Console.Write("Enter Tow Number : ");
+            Console.WriteLine("Enter Tow Number : ");
             x = Convert.ToInt32(Console.ReadLine());
             y = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("The Addition is = " + add(x,y));
